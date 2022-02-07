@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa...</title>
+    <style>
+
+        body {
+
+            background-color: rgba(89, 0, 255, 0.193);
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>Olá,mundo!</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        
+        var n1 = Number(window.prompt('Digite um número: '))
+        var n2 = Number(window.prompt('Digite outro número: '))
+        var s = n1 + n2
+        window.alert('A soma dos valores é ' + s)
+        /* Como forçar para o JS forçar ser um número? 
+        CONVERÇÕES DE TIPO
+        String para Número
+        1) Number.parseInt(n) - inteiros
+        2) Number.parseFloat(n) - float
+        3 - Number(n) - tudo vai ser qq tipo de numero, essa opcao é a mais atual do JS
+        Declarando ou convertendo para STRING
+        1) String(n)
+        2) n.toString()
+
+        */
+
+        // agora vamos aprender uma formatação mais inteligente, para concatenação, parecido com o python, usando ${}
+
+        window.alert(`OPCAO 2 - A soma dos valores é ${s}`)
+
+        // Perceber que nessa linha, vc usa CRASE para abrir e fechar, e usa o recurso ${} para colocar a variável, eliminando a necessidade de virculas e o sinal de soma.
+
+        // O nome dessa técnica se chama TEMPLATE STRINGS - o sifrão se chama - PLACE HOLDER
+
+        window.alert(`A nota 1 foi ${n1} e a nota 2 foi ${n2}, e a soma é ${s}`)
+
+    </script>
+
+</body>
+</html>
