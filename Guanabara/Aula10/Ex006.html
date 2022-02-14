@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div#area {
+        font: normal 20pt arial;
+        background-color: lightgreen;
+        color: white;
+        width: 100px;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div id="area">
+        Interaja...
+    </div>
+
+    <script>
+
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        a.addEventListener('mousedown', segurar)
+        
+    
+    
+        function segurar(){
+
+            a.innerHTML = 'Segurou'
+        }
+
+        function clicar() {
+            a.innerHTML = 'Clicou!'
+            a.style.background = 'red'
+    
+        }
+    
+        function entrar() {
+            a.innerHTML = 'Entrou!'
+        }
+    
+        function sair() {
+            
+            a.innerHTML = 'Saiu!'
+            
+            a.style.background = 'green'
+        }
+    
+    </script>
+    
+
+    <p>Tipos de evento de mouse (apenas alguns:</p>
+
+    <ol>
+        <li>mouseenter - quando chega dentro da div
+        <li>mousemove - enquanto tiver dentro da div
+        <li>mouseup - quando solta o clique
+        <li>mousedown - quando clica sem soltar
+        <li>click - clique inteiro
+        <li>mouseout - quando o cursor sair da div
+
+    </ol>
+
+    <p>Buscar no Google - JavaScript Events List site MDN</p>
+
+</body>
+
+</html>
