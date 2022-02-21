@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição Múltima</title>
+</head>
+
+<body>
+
+    <script>
+
+        var agora = new Date();
+        var diaSem = agora.getDay();
+        /*
+
+        0 = DOMING
+        6 = Sábado
+
+        */
+
+        switch (diaSem) {
+
+            case 0:
+                console.log("Domingo");
+                break
+            
+            case 1:
+                console.log("Segunda");
+                break
+
+            case 2:
+                console.log("Terça-feira");
+                break
+            
+            case 3:
+                console.log("Quarta");
+                break
+            
+            case 4:
+                console.log("Quinta");
+                break
+
+            case 5:
+                console.log("Sexta");
+                break
+
+            case 6:
+                console.log("Domingo");
+                break
+
+            default:
+                console.log("Você digitou errado");
+                break
+
+        }
+
+    </script>
+</body>
+
+</html>
