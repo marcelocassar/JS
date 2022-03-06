@@ -1,0 +1,41 @@
+body {
+
+    background: lightskyblue;
+}
+
+main, header, footer {
+
+    text-align: center;
+    margin: auto;
+    max-width: 400px;
+
+}
+
+img {
+
+    width: 30%;
+
+}
+
+main {
+
+    width:350px;
+    min-height: 250px;
+    background: white;
+    padding: 10px;
+    padding-top: 20px;
+    border-radius: 20%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.466);
+}
+
+input#txtano {
+
+    text-align: center;
+    width: 75px;
+
+}
+#mas, #fem {
+
+text-decoration: double;
+font-size: 30px;
+}
